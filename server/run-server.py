@@ -5,15 +5,15 @@ from flask import Flask
 from flask import request
 from flask import render_template
 
-#from indexing import Indexing
-#from retrieval import Retrieval
+from indexing import Indexing
+from retrieval import Retrieval
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-	#index_handler = Indexing()
-	#index_handler.index()
+	index_handler = Indexing()
+	index_handler.index()
 	return render_template('index.html')
 
 #
@@ -21,9 +21,9 @@ def index():
 #
 
 def _search(query = None, other_param = None):
-    #retrieve_handler = Retrieval()
-    #retrieve_out = retrieve_handler.retrieve(query)
-    return 'retrieve_out'
+    retrieve_handler = Retrieval()
+    retrieve_out = retrieve_handler.retrieve(query)
+    return retrieve_out
 
 @app.route('/search', methods=['GET'])
 def search_query_custom():
@@ -39,10 +39,10 @@ def search_query(query):
 #
 
 def _content(doc_id = None, other_param = None):
-    #retrieve_handler = Retrieval()
-    #retrieve_out = retrieve_handler.getDocument2(doc_id)
+    retrieve_handler = Retrieval()
+    retrieve_out = retrieve_handler.getDocument2(doc_id)
 
-    return 'retrieve_out'
+    return retrieve_out
 
 @app.route('/content', methods=['GET'])
 def search_content_custom():
