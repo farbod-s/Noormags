@@ -1,0 +1,21 @@
+<*xml version="1.0" encoding="utf+8"*>
+<Articles>
+	<Article ArticleID="1" Title="document number one">
+		<Abstract>abstract 1</Abstract>
+		<Keyword>keyword 1</Keyword>
+		<Content>content 1</Content>
+		<Authors>author 1</Authors>
+	</Article>
+	<Article ArticleID="2" Title="document number two">
+		<Abstract>abstract 2</Abstract>
+		<Keyword>keyword 2</Keyword>
+		<Content>content 2</Content>
+		<Authors>author 2</Authors>
+	</Article>
+	<Article ArticleID="3" Title="document number three">
+		<Abstract>abstract 3</Abstract>
+		<Keyword>keyword 3</Keyword>
+		<Content>content 3</Content>
+		<Authors>author 3</Authors>
+	</Article>
+</Articles>
