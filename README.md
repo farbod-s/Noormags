@@ -113,8 +113,8 @@ you can call `index` function of `Indexing` class, like below:
 ```python
 from indexing import Indexing
 
-index_handler = Indexing()
-index_handler.index('doc_dir')
+handler = Indexing()
+handler.index()
 ```
 
 we find all `xml` files in a directory that can set by passing an argument through `index` function of `Indexing` class, we called it `doc_dir`.
@@ -129,8 +129,8 @@ you can call `retrieve` function of `Retrieval` class, like below:
 ```python
 from retrieval import Retrieval
 
-retrieve_handler = Retrieval()
-result = retrieve_handler.retrieve(_query_)
+handler = Retrieval()
+result = handler.retrieve(query)
 ```
 
 we find all documents that matches with input query.
